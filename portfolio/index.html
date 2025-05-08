@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="karim.jpg" alt="My Face" class="profile-pic" />
+        <span>MyPortfolio</span>
+      </div>      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Hello, I'm a <span class="highlight">Web Developer</span></h2>
+      <p>I build modern, responsive, and engaging websites.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm passionate about clean design and smooth user experiences. I enjoy turning ideas into reality in the browser.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="karim.jpg" alt="Project 1" />
+          <h3>Project One</h3>
+          <p>Responsive website built with HTML/CSS/JavaScript.</p>
+        </div>
+        <div class="card">
+          <img src="karim.jpg" alt="Project 2" />
+          <h3>Project Two</h3>
+          <p>Landing page with animation and mobile-first design.</p>
+        </div>
+        <div class="card">
+          <img src="karim.jpg" alt="Project 3" />
+          <h3>Project Three</h3>
+          <p>Personal blog styled with modern CSS frameworks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Send me a message (this form doesn't submit, it's just for design):</p>
+      <form action="https://formspree.io/f/mbloyklr" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
